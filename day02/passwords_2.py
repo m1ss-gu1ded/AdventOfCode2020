@@ -1,4 +1,4 @@
-with open("input.txt") as report:
+with open("input_02.txt") as report:
     pw_list = report.readlines()
 pw_list = [(x.strip()) for x in pw_list]
 pw_list = [(y.split(": ")) for y in pw_list]

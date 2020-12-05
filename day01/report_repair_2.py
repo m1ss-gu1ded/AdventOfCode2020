@@ -1,4 +1,4 @@
-with open('input.txt') as report:
+with open('input_01.txt') as report:
     report_list = report.readlines()
 report_list = [int(x.strip()) for x in report_list]
 
