@@ -21,6 +21,3 @@ for group in answer_list:
     num_sum += num_of_answers
 
 print(f"Sum of questions answered with 'Yes': {num_sum}")
-
-
-
