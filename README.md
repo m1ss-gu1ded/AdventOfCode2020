@@ -13,4 +13,4 @@
      `-._       _.-'
          '""""""
 
-Solutions to Advent of Code 2020" code challenge in Python.
+Solutions to Advent of Code 2020 code challenge in Python.
