@@ -39,13 +39,13 @@ for diff_item in difference_list:
         if sequence:
             sequence_list.append(sequence)
             sequence = []
-print(sequence_list)
+print(f"List of sequences of 1: {sequence_list}")
 
 # ... and counting the length of the sequences.
 length_list = []
 for seq_item in sequence_list:
     length_list.append(seq_item.count(1))
-print(length_list)
+print(f"Length of those sequences: {length_list}")
 
 # Figured out the relationship of 'length' to 'distinct arrangements' with pen and paper...
 distinct_ways = 1
