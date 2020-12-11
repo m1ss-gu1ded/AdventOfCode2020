@@ -41,15 +41,15 @@ for diff_item in difference_list:
             sequence = []
 print(sequence_list)
 
-# ... and counting the amount of ones.
-count_list = []
+# ... and counting the length of the sequences.
+length_list = []
 for seq_item in sequence_list:
-    count_list.append(seq_item.count(1))
-print(count_list)
+    length_list.append(seq_item.count(1))
+print(length_list)
 
-# Figured out the relationship of amount of 1 to distinct arrangements with pen and paper...
+# Figured out the relationship of 'length' to 'distinct arrangements' with pen and paper...
 distinct_ways = 1
-for item in count_list:
+for item in length_list:
     if item == 2:
         distinct_ways *= 2
     elif item == 3:

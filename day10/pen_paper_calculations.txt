@@ -1,5 +1,5 @@
-After getting the lenghts of the 1-sequences you can see that they are never longer than 4.
-The different arrangements for at most 4 adapters can be easily written down by hand:
+After getting the lenghts of the 1-sequences you can see that (for the given input) they are never longer than 4.
+The different arrangements for at most 4 adapters can be written down by hand:
 
 1 1
 2
@@ -22,5 +22,4 @@ The different arrangements for at most 4 adapters can be easily written down by 
 1 3
         -> 7 ways
 
-
-
+This is technically cheating in a code challenge, but it gets the job done - in an absolutely reasonable amount of time (for the given input) ;)
