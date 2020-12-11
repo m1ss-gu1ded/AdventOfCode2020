@@ -47,7 +47,7 @@ for seq_item in sequence_list:
     count_list.append(seq_item.count(1))
 print(count_list)
 
-# Figured out the relationship of amount of ones to distinct arrangements with pen and paper...
+# Figured out the relationship of amount of 1 to distinct arrangements with pen and paper...
 distinct_ways = 1
 for item in count_list:
     if item == 2:
