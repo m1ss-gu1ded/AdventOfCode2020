@@ -17,10 +17,11 @@ for bus in timetable:
         index = timetable.index(bus)
         bus_list.append(bus)
         min_list.append(index)
-print(bus_list)
-print(min_list)
+print(f"divisor list: {bus_list}")
+print(f"modulo list: {min_list}")
 
 
+# extended greatest common divisor: Extended Euclidean algorithm
 def extgcd(a, b):
     u, v, s, t = 1, 0, 0, 1
     while b != 0:
@@ -31,6 +32,7 @@ def extgcd(a, b):
     return a, u, v
 
 
+# returns dividend m*n and rest x
 def chinese_remainder(nn, rr):
     if len(nn) == 1:
         return nn[0], rr[0]
@@ -43,5 +45,8 @@ def chinese_remainder(nn, rr):
         return m * n, x
 
 
+# Since the solution is the smallest number in the set of Chinese remainders: s * 1 = m*n - x
 solution = chinese_remainder(bus_list, min_list)[0] - chinese_remainder(bus_list, min_list)[1]
-print(solution)
+print(f"dividend: {chinese_remainder(bus_list, min_list)[0]}")
+print(f"rest: {chinese_remainder(bus_list, min_list)[1]}")
+print(f"solution: {solution}")
